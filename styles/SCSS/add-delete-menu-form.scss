@@ -1,0 +1,88 @@
+.add-dish__container, .delete-dish__container {
+    margin: 0px auto;
+    box-shadow: 0 14px 28px rgba(255, 0, 0, 0.25), 0 10px 10px rgb(255, 0, 0);
+    padding: 25px;
+    width: fit-content;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+
+    img {
+        margin-bottom: 10px;
+        width: 200px;
+    }
+
+    form {
+        margin-top: 15px;
+
+        label {
+            align-self: self-start;
+            font-weight: bold;
+            font-size: 20px;
+            position: relative;
+            top: 15px;
+        }
+    
+        textarea {
+            width: 300px;
+            height: 150px;
+            border: 2px solid red;
+            border-radius: 10px;
+        }
+
+        select {
+            width: 300px;
+            height: 40px;
+            border: 2px solid red;
+            border-radius: 10px;
+            padding-left: 10px;
+            font-size: 18px;
+        }
+    
+        button {
+        cursor: pointer;
+        width: 190px;
+        height: 47px;
+        border-radius: 10px;
+        font-size: 15px;
+        border: none;
+        margin-bottom: 30px;
+        background-color: red;
+        color: white;
+        font-weight: bold;
+        border: 1px solid red;
+        transition: 0.6s all cubic-bezier(0.215, 0.610, 0.355, 1);
+        font-size: 20px;
+    
+        &:hover {
+            background-color: transparent;
+            color: red;
+        }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .add-dish__container, .delete-dish__container {
+        width: 90%;
+        max-width: 400px;
+
+        .add-dish__container form, .delete-dish__container form {
+            width: 95%;
+        }
+
+        label {
+            font-size: 17px;
+        }
+
+        textarea {
+            width: 65%;
+        }
+
+        select {
+            width: 65%;
+        }
+    }
+}

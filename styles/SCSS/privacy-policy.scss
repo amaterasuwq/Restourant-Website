@@ -1,0 +1,28 @@
+.privacy-policy__container {
+    margin: 20px;
+    padding: 20px 175px;
+    
+    h1 {
+        font-size: 42px;
+        margin-bottom: 15px;
+    }
+
+    h2 {
+        margin-top: 50px;
+    }
+
+    p, ul li {
+        font-size: 18px;
+    }
+
+    ul li {
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .privacy-policy__container {
+        margin: 10px;
+        padding: 20px;
+    }
+}

@@ -1,0 +1,126 @@
+.feedback-form__container {
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    box-shadow: 0 14px 28px rgba(255, 0, 0, 0.25), 0 10px 10px rgb(255, 0, 0);
+    width: fit-content;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 70px;
+}
+
+.feedback-form__logo {
+    img {
+        width: 150px;
+    }
+}
+
+.feedback-form__title {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.feedback-form__form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.feedback-form__label {
+    align-self: start;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.feedback-form__input {
+    border-radius: 10px;
+    border: 2px solid red;
+    background: white;
+    width: 250px;
+    font-size: 18px;
+    
+    &::placeholder {
+        color: red;
+        font-size: 20px;
+    }
+}
+
+.feedback-form__button {
+    margin-top: 30px;
+    cursor: pointer;
+    width: 140px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 15px;
+    border: none;
+    margin-bottom: 30px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    border: 1px solid red;
+    transition: 0.6s all cubic-bezier(0.215, 0.610, 0.355, 1);
+
+    &:hover {
+        background-color: transparent;
+        color: red;
+    }
+}
+
+.star-rating {
+	white-space: nowrap;
+
+    & [type="radio"] {
+        appearance: none;
+        display: none;
+    }
+
+    & i {
+        font-size: 20px;
+        transition: 0.3s; 
+    }
+
+    & label:is(:hover, :has(~ :hover)) i {
+        transform: scale(1.35);
+	    color: #fffdba;
+	    animation: jump 0.5s calc(0.3s + (var(--i) - 1) * 0.15s) alternate infinite;
+    }
+
+    & label:has(~ :checked) i {
+        color: #faec1b;
+	    text-shadow: 0 0 2px #ffffff, 0 0 10px #ffee58;
+    }
+}
+
+@keyframes jump {
+	50% {
+		transform: translatey(0) scale(1.35);
+	}
+	100% {
+		transform: translatey(-15%) scale(1.35);
+	}
+}
+
+@media (max-width: 767px) {
+    .feedback-form__container {
+        width: 95%;
+        padding: 0px ;
+
+        input {
+            width: 100%;
+        }
+
+        textarea {
+            width: 100%;
+        }
+    }
+
+    .feedback-form__title {
+        font-size: 18px;
+    }
+
+    .feedback-form__label {
+        font-size: 16px;
+    }
+}

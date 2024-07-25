@@ -1,0 +1,24 @@
+.privacy-policy__container {
+  margin: 20px;
+  padding: 20px 175px;
+}
+.privacy-policy__container h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+.privacy-policy__container h2 {
+  margin-top: 50px;
+}
+.privacy-policy__container p, .privacy-policy__container ul li {
+  font-size: 18px;
+}
+.privacy-policy__container ul li {
+  margin-bottom: 15px;
+}
+
+@media (max-width: 767px) {
+  .privacy-policy__container {
+    margin: 10px;
+    padding: 20px;
+  }
+}/*# sourceMappingURL=privacy-policy.css.map */
